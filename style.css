@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+#name {
+  background: linear-gradient(60deg, blue, red, blue);
+  text-decoration: underline;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
