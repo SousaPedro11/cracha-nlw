@@ -1,25 +1,99 @@
+* {
+  margin: 0;
+}
 html,
 body {
+  --grey: hsl(240, 9%, 89%);
+
   height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   display: grid;
   place-items: center;
-  background: lightblue;
+}
+
+main {
+  width: 375px;
+  height: 812px;
+  background: url("images/background.svg");
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 h1 {
   font-size: 1.5rem;
+
+  margin-top: 1.5rem;
 }
 
 a {
-  color: red;
+  color: var(--grey);
   text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
 }
 
 #name {
-  background: linear-gradient(60deg, blue, red, blue);
+  background: linear-gradient(60deg, #ff008e, #ffcd1e);
   text-decoration: underline;
   background-clip: text;
   -webkit-background-clip: text;
