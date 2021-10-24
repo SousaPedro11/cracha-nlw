@@ -4,6 +4,10 @@
 html,
 body {
   --grey: hsl(240, 9%, 89%);
+  --pink: hsl(327, 100%, 50%);
+  --yellow: hsl(47, 100%, 56%);
+  --green: hsl(147, 100%, 56%);
+  --blue: hsl(217, 90%, 60%);
 
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -18,7 +22,7 @@ body {
 main {
   width: 375px;
   height: 812px;
-  background: url("images/background.svg");
+  background: url("https://gist.githubusercontent.com/SousaPedro11/cc55ff6e5e134ce6f8a8515b0b02d740/raw/ad18490fb965e566a391765206c3b662579f449f/background.svg?sanitize=true");
 }
 
 .container {
@@ -93,9 +97,30 @@ ul {
 }
 
 #name {
-  background: linear-gradient(60deg, #ff008e, #ffcd1e);
+  /* background: linear-gradient(60deg, #ff008e, #ffcd1e, #23a6d5, #23d591); */
+  background: linear-gradient(
+    60deg,
+    var(--pink),
+    var(--yellow),
+    var(--blue),
+    var(--green)
+  );
   text-decoration: underline;
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0.2);
+  background-size: 400% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
