@@ -89,7 +89,7 @@ main {
   position: absolute;
   transform: matrix(1, 0, 0, -1, 0, 0);
   bottom: 161px;
-  left: 187.5px;
+  left: 187.4px;
   clip-path: polygon(0% 53.69%, 100% 53.69%, 100% 25%, 50% 0%, 0% 25%);
 }
 
@@ -116,7 +116,7 @@ main {
   position: absolute;
   width: 600px;
   height: 600px;
-  top: -280px;
+  top: -250px;
   left: 5px;
 
   background: radial-gradient(
@@ -131,7 +131,7 @@ main {
   position: absolute;
   width: 600px;
   height: 600px;
-  top: -280px;
+  top: -250px;
   left: -225px;
 
   background: radial-gradient(
