@@ -50,7 +50,7 @@ main {
 
   background: linear-gradient(
     55.21deg,
-    rgba(255, 0, 142, 0) 9.1%,
+    rgba(255, 0, 140, 0.623) 9.1%,
     #ffcd1e 89.46%
   );
   background-size: 400% 200%;
@@ -63,7 +63,7 @@ main {
 
   background: linear-gradient(
     153.03deg,
-    #8257e5 18.39%,
+    #d3227a 18.39%,
     rgba(255, 0, 142, 0) 84.08%
   );
   background-size: 400% 200%;
@@ -116,8 +116,8 @@ main {
   position: absolute;
   width: 600px;
   height: 600px;
-  top: -250px;
-  left: 5px;
+  top: -300px;
+  left: 25px;
 
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -131,8 +131,8 @@ main {
   position: absolute;
   width: 600px;
   height: 600px;
-  top: -250px;
-  left: -225px;
+  top: -300px;
+  left: -245px;
 
   background: radial-gradient(
     50% 50% at 50% 50%,
