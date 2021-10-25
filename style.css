@@ -8,6 +8,8 @@ body {
   --yellow: hsl(47, 100%, 56%);
   --green: hsl(147, 100%, 56%);
   --blue: hsl(217, 90%, 60%);
+  --black: hsl(240, 6%, 13%);
+  --purple: hsl(258, 73%, 62%);
 
   height: 100%;
   font-family: "Roboto", sans-serif;
@@ -20,11 +22,124 @@ body {
 }
 
 main {
+  position: relative;
   width: 375px;
   height: 812px;
-  background: url("images/background.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+
+  background: #202024;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.background-image {
+  position: absolute;
+  width: 375px;
+  height: 694.38px;
+  top: -418.1px;
+
+  background: linear-gradient(122.5deg, var(--pink), var(--yellow));
+  clip-path: polygon(0% 60.25%, 0% 84.5%, 50% 100%, 100% 84.5%, 100% 60.25%);
+}
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.yellow-hexagon {
+  width: 187.5px;
+  height: 214.82px;
+
+  background: linear-gradient(
+    55.21deg,
+    rgba(255, 0, 142, 0) 9.1%,
+    #ffcd1e 89.46%
+  );
+  background-size: 400% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+.purple-hexagon {
+  width: 187.5px;
+  height: 214.82px;
+
+  background: linear-gradient(
+    153.03deg,
+    #8257e5 18.39%,
+    rgba(255, 0, 142, 0) 84.08%
+  );
+  background-size: 400% 200%;
+  animation: gradient 5s ease infinite;
+}
+
+.top-hexagon {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
+  /* top: -99.45px; */
+  bottom: 161px;
+  left: 93.75px;
+  clip-path: polygon(0% 53.69%, 100% 53.69%, 100% 25%, 50% 0%, 0% 25%);
+}
+
+.top-left-hexagon {
+  position: absolute;
+  transform: rotate(-180deg);
+  bottom: 161px;
+  clip-path: polygon(0% 53.69%, 100% 53.69%, 100% 25%, 50% 0%, 0% 25%);
+}
+.top-right-hexagon {
+  position: absolute;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  bottom: 161px;
+  left: 187.5px;
+  clip-path: polygon(0% 53.69%, 100% 53.69%, 100% 25%, 50% 0%, 0% 25%);
+}
+
+.bottom-left-hexagon {
+  position: absolute;
+  transform: rotate(-180deg);
+  bottom: 53.91px;
+}
+
+.bottom-right-hexagon {
+  position: absolute;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  left: 187.5px;
+  bottom: 53.91px;
+}
+
+.bottom-hexagon {
+  position: absolute;
+  left: 93.75px;
+  bottom: 0px;
+}
+
+.degrade1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -280px;
+  left: 5px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffc323 0%,
+    rgba(18, 18, 20, 0) 100%
+  );
+  transform: rotate(-180deg);
+}
+
+.degrade2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -280px;
+  left: -225px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ff3d6e 0%,
+    rgba(18, 18, 20, 0) 100%
+  );
+  transform: rotate(-180deg);
 }
 
 .container {
@@ -37,7 +152,7 @@ main {
 
 .avatar {
   width: 10rem;
-  margin: 11.5rem auto 0;
+  margin: 10.3rem auto 0;
   position: relative;
 }
 

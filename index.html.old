@@ -14,21 +14,12 @@
 
 <body>
     <main>
-        <div class="background-image">
-            <div class="top-hexagon yellow-hexagon hexagon"></div>
-            <div class="bottom-left-hexagon purple-hexagon hexagon"></div>
-            <div class="bottom-right-hexagon yellow-hexagon hexagon"></div>
-            <div class="top-left-hexagon purple-hexagon hexagon"></div>
-            <div class="top-right-hexagon purple-hexagon hexagon"></div>
-            <div class="bottom-hexagon purple-hexagon hexagon"></div>
-        </div>
-        <div class="degrade2"></div>s
-        <div class="degrade1"></div>
         <div class="container">
             <div class="avatar">
                 <span>
                     <img src="images/build.svg" alt="Selo RocketSeat">
                 </span>
+                <!-- <img src="http://lorempixel.com.br/185/185/people" alt="Foto Pessoal de Sousapedro11"> -->
                 <img src="images/profile.jpg" alt="Foto Pessoal de Sousapedro11">
             </div>
             <h1 id="name">
