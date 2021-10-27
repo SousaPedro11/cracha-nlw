@@ -20,7 +20,7 @@ Aplicação desenvolvida durante a trilha Origin da NLW Heat promovida pela Rock
 
 ## Demo (GH Pages)
 
-[Crachá Sousapedro11](https://sousapedro11.github.io/cracha-nlw/)
+[Crachá Sousapedro11 on GHPages](https://sousapedro11.github.io/cracha-nlw/) (acesse!)
 
 ### Preview
 
