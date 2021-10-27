@@ -166,6 +166,7 @@ main {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
+  transition: all 1s ease;
 
   -webkit-clip-path: polygon(
     50% 0%,
@@ -176,6 +177,19 @@ main {
     0% 25%
   );
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.avatar > img:hover {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 0%,
+    100% 100%,
+    50% 100%,
+    0% 100%,
+    0% 0%
+  );
+
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
 }
 
 h1 {
