@@ -193,6 +193,10 @@ main {
   clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 0%);
 }
 
+.org-logo {
+  width: 48px;
+}
+
 h1 {
   font-size: 1.5rem;
 
@@ -223,7 +227,7 @@ p {
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   list-style: none;
   padding: 0;

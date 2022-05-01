@@ -1,5 +1,3 @@
-const url = `https://api.github.com/users/${linksSocialMedia.github}`;
-
 const linksSocialMedia = {
     github: 'sousapedro11',
     youtube: 'pedrofearless',
@@ -7,6 +5,8 @@ const linksSocialMedia = {
     instagram: 'sousapedro11',
     twitter: 'ppls2106',
 }
+
+const url = `https://api.github.com/users/${linksSocialMedia.github}`;
 
 function changeSocialMediaLinks() {
     for (const li of socialLinks.children) {
@@ -29,15 +29,30 @@ function getGithubProfile() {
         })
 }
 
-function createOrgs(){
+function createOrgs() {
 
     const orgUrl = url.concat('/orgs')
 
     fetch(orgUrl)
+        .then(result => result.json())
         .then(data => {
-
+            for (org of data) {
+                var li = document.createElement("li");
+                var a = document.createElement("a");
+                var img = document.createElement("img");
+                img.src = org.avatar_url
+                img.className = "org-logo"
+                img.title = org.login
+                a.href = `https://github.com/${org.login}/`
+                a.target = "_blank"
+                a.rel = "noopener noreferrer"
+                a.appendChild(img);
+                li.appendChild(a);
+                userOrgs.appendChild(li);
+            }
         })
 }
 
 changeSocialMediaLinks()
 getGithubProfile()
+createOrgs()
