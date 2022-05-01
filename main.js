@@ -1,3 +1,5 @@
+const url = `https://api.github.com/users/${linksSocialMedia.github}`;
+
 const linksSocialMedia = {
     github: 'sousapedro11',
     youtube: 'pedrofearless',
@@ -15,7 +17,6 @@ function changeSocialMediaLinks() {
 }
 
 function getGithubProfile() {
-    const url = `https://api.github.com/users/${linksSocialMedia.github}`
 
     fetch(url)
         .then(response => response.json())
@@ -25,6 +26,16 @@ function getGithubProfile() {
             userBio.textContent = data.bio
             userLink.href = data.html_url
             userLogin.textContent = data.login
+        })
+}
+
+function createOrgs(){
+
+    const orgUrl = url.concat('/orgs')
+
+    fetch(orgUrl)
+        .then(data => {
+
         })
 }
 
